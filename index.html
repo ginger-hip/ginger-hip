@@ -10,36 +10,61 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
-            background-color: #000; /* Black background */
+            background: linear-gradient(180deg, #000000, #333333); /* Black gradient background */
             color: #d4af37; /* Gold text */
             font-family: 'Times New Roman', Times, serif;
+            padding: 20px;
+            box-sizing: border-box;
         }
         h1 {
             font-size: 2.5em;
             margin-bottom: 0.5em;
             text-align: center;
+            letter-spacing: 2px;
         }
-        h2 {
-            font-size: 1.8em;
+        h2.name {
+            font-size: 2em;
+            margin-bottom: 0.3em;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+        h2.dates {
+            font-size: 1.5em;
             margin-bottom: 0.5em;
             text-align: center;
+            font-style: italic;
         }
         p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin-bottom: 2em;
             text-align: center;
-            max-width: 600px;
+            max-width: 90%;
+            line-height: 1.6;
+        }
+        .divider {
+            width: 60%;
+            height: 1px;
+            background-color: #d4af37;
+            margin: 20px 0;
         }
         img {
-            max-width: 50%; /* Adjusted to make the image smaller */
-            max-height: 50vh; /* Adjusted to make the image smaller */
+            width: 100%; /* Full width for mobile */
+            max-width: 500px; /* Limit the width on larger screens */
+            max-height: 60vh; /* Ensure the image doesn't take up too much height */
             object-fit: contain;
-            border: 2px solid #d4af37; /* Gold border */
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.6);
+            border: 3px solid #d4af37; /* Gold border */
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.6);
             margin-bottom: 2em;
+        }
+        .family-message {
+            font-size: 1.2em;
+            text-align: center;
+            margin-top: 2em;
+            font-style: italic;
         }
         footer {
             font-size: 0.9em;
@@ -47,14 +72,34 @@
             margin-top: auto;
             padding: 1em 0;
             border-top: 1px solid #d4af37;
+            width: 100%;
+        }
+        /* Media Query for Tablets and Desktops */
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3em;
+            }
+            h2.name {
+                font-size: 2.5em;
+            }
+            h2.dates {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1.2em;
+            }
         }
     </style>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon link -->
 </head>
 <body>
     <h1>In Loving Memory</h1>
-    <h2>1932 February 14th - 2024 August 13th</h2>
-    <p>May their soul rest in peace and their memory live on forever in our hearts.</p>
+    <div class="divider"></div>
+    <h2 class="name">M. P. Balu</h2>
+    <h2 class="dates">1932 February 14th - 2024 August 13th</h2>
+    <p>"A life well lived leaves behind a beautiful legacy."</p>
     <img src="images/gg.jpg" alt="Memorial Image">
+    <p class="family-message">With love, from his family.</p>
     <footer>
         © 2024 Forever in Our Hearts
     </footer>
