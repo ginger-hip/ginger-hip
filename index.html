@@ -4,132 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>In Loving Memory</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background: linear-gradient(180deg, #000000, #333333); /* Black gradient background */
-            color: #d4af37; /* Gold text */
-            font-family: 'Times New Roman', Times, serif;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.5em;
-            text-align: center;
-            letter-spacing: 2px;
-        }
-        h2.name {
-            font-size: 2em;
-            margin-bottom: 0.3em;
-            text-align: center;
-            font-weight: bold;
-            letter-spacing: 1.5px;
-        }
-        h2.dates {
-            font-size: 1.5em;
-            margin-bottom: 0.5em;
-            text-align: center;
-            font-style: italic;
-        }
-        p {
-            font-size: 1.1em;
-            margin-bottom: 1em;
-            text-align: center;
-            max-width: 90%;
-            line-height: 1.6;
-        }
-        .additional-message {
-            font-size: 1.2em;
-            margin-top: 0.5em;
-            text-align: center;
-            font-style: italic;
-        }
-        .beloved-message {
-            font-size: 1.2em;
-            margin-top: 0.5em;
-            text-align: center;
-            font-style: italic;
-            max-width: 90%;
-        }
-        .divider {
-            width: 60%;
-            height: 1px;
-            background-color: #d4af37;
-            margin: 20px 0;
-        }
-        img.main-image {
-            width: 100%; /* Full width for mobile */
-            max-width: 500px; /* Limit the width on larger screens */
-            max-height: 60vh; /* Ensure the image doesn't take up too much height */
-            object-fit: contain;
-            border: 3px solid #d4af37; /* Gold border */
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.6);
-            margin-bottom: 2em;
-        }
-        .happy-images {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 2em;
-        }
-        .happy-images img {
-            width: 100%;
-            max-width: 200px; /* Limit size on larger screens */
-            aspect-ratio: 1 / 1; /* Maintain 1:1 ratio */
-            border: 2px solid #d4af37; /* Gold border */
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(212, 175, 55, 0.6);
-        }
-        .family-message {
-            font-size: 1.2em;
-            text-align: center;
-            margin-top: 2em;
-            font-style: italic;
-        }
-        .positive-message {
-            font-size: 1.2em;
-            text-align: center;
-            margin-top: 1em;
-            max-width: 90%;
-            font-style: italic;
-        }
-        footer {
-            font-size: 0.9em;
-            text-align: center;
-            margin-top: auto;
-            padding: 1em 0;
-            border-top: 1px solid #d4af37;
-            width: 100%;
-        }
-        /* Media Query for Tablets and Desktops */
-        @media (min-width: 768px) {
-            h1 {
-                font-size: 3em;
-            }
-            h2.name {
-                font-size: 2.5em;
-            }
-            h2.dates {
-                font-size: 2em;
-            }
-            p {
-                font-size: 1.2em;
-            }
-            .happy-images {
-                justify-content: space-between;
-            }
-            .happy-images img {
-                max-width: 250px; /* Slightly larger images on bigger screens */
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon link -->
 </head>
 <body>
@@ -139,18 +14,36 @@
     <h2 class="dates">February 14, 1932 - August 13, 2024</h2>
     <p>"A life well lived leaves behind a beautiful legacy."</p>
     <p class="additional-message">He gave everything and lived his life to the fullest.</p>
+
     <img src="images/gg.jpg" alt="Memorial Image" class="main-image">
-    
+
     <div class="happy-images">
         <img src="images/happy1.png" alt="Happy Memory 1">
         <img src="images/happy2.png" alt="Happy Memory 2">
     </div>
 
-    <p class="beloved-message">He was a beloved husband, father, grandfather, great-grandfather, and so much more.</p>
+    <div class="speech">
+        <img src="images/son-speech.jpg" alt="Son Giving Speech" class="speech-image">
+        <h3>Speech by Arul, Son of M. P. Balu, about His Father</h3>
+        <p class="speech-date">Given on August 18, 2024</p>
+        <p>My father was a deeply committed individual. Despite his devout nature, during his youth, he was greatly influenced by Periyar's ideologies. He actively participated in many gatherings and became a devoted follower of Periyar. From a young age, he served as Periyar’s disciple and later also worked with Maniammaiyar. Under her leadership, he organized numerous events. Even in challenging circumstances, when time was scarce, he would tirelessly work to ensure the success of these gatherings.</p>
+        <p>He also worked with Asiriyar and remained closely associated with them for nearly 70 years.</p>
+        <p>At home, my father did not accept the religious devotion of others. Even after marrying my mother, who initially desired to remain deeply religious, he stood firm in his beliefs and did not allow her the freedom to practice them. Instead, he insisted that she adopt his ideologies. Over time, my mother gave up her own beliefs and started following my father's principles. She has worked alongside him for nearly 60 years.</p>
+        <p>Throughout his life, my father never turned to God, even in times of illness or distress. This always amazed me. While many might seek solace in religion during difficult times, my father never did. From the moment he embraced his beliefs until his last breath, he remained steadfast in Periyar’s ideologies.</p>
+        <p>Today, in memory of my father, I respectfully request Asiriyar and Minister M. Subramani to inaugurate the unveiling of his portrait.</p>
+    </div>
+
+    <div class="group-photo-section">
+        <img src="images/group-photo-sketched.jpg" alt="Group Photo" class="group-photo">
+        <p class="photo-caption">This image has been resketched to protect online privacy.</p>
+    </div>
+
     <p class="family-message">With love, from his family.</p>
+
     <p class="positive-message">This website is a time capsule, capturing the positive impact of his life on the world.</p>
+
     <footer>
-        © 2024 Forever in Our Hearts
+        © 2024 Immortal in Our Memories
     </footer>
 </body>
 </html>

@@ -1,0 +1,182 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(180deg, #000000, #333333); /* Black gradient background */
+    color: #d4af37; /* Gold text */
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+h2.name {
+    font-size: 2em;
+    margin-bottom: 0.3em;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+h2.dates {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-style: italic;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    text-align: center;
+    max-width: 90%;
+    line-height: 1.6;
+}
+
+.additional-message,
+.beloved-message,
+.family-message,
+.positive-message {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    text-align: center;
+    font-style: italic;
+    max-width: 90%;
+}
+
+.divider {
+    width: 60%;
+    height: 1px;
+    background-color: #d4af37;
+    margin: 20px 0;
+}
+
+img.main-image {
+    width: 100%; /* Full width for mobile */
+    max-width: 500px; /* Limit the width on larger screens */
+    max-height: 60vh; /* Ensure the image doesn't take up too much height */
+    object-fit: contain;
+    border: 3px solid #d4af37; /* Gold border */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.6);
+    margin-bottom: 2em;
+}
+
+.happy-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 2em;
+}
+
+.happy-images img {
+    width: 100%;
+    max-width: 200px; /* Limit size on larger screens */
+    aspect-ratio: 1 / 1; /* Maintain 1:1 ratio */
+    border: 2px solid #d4af37; /* Gold border */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.6);
+}
+
+.speech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin-top: 2em;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.5);
+    text-align: left; /* Left-align the text within the speech */
+}
+
+.speech img.speech-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.6);
+}
+
+.speech h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    text-align: center; /* Center the speech title */
+}
+
+.speech .speech-date {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    font-style: italic;
+    text-align: center; /* Center the date */
+}
+
+.group-photo-section {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.group-photo-section h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+.group-photo-section img.group-photo {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.6);
+    margin-bottom: 10px;
+}
+
+.group-photo-section p.photo-caption {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #aaa;
+}
+
+footer {
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: auto;
+    padding: 1em 0;
+    border-top: 1px solid #d4af37;
+    width: 100%;
+}
+
+/* Media Query for Tablets and Desktops */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2.name {
+        font-size: 2.5em;
+    }
+
+    h2.dates {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .happy-images {
+        justify-content: space-between;
+    }
+
+    .happy-images img {
+        max-width: 250px; /* Slightly larger images on bigger screens */
+    }
+}
